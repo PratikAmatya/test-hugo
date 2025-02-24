@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-24T21:41:18+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-24T21:41:18+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ssh-setup/</loc>
+    <lastmod>2025-02-24T21:41:18+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/regex-cheatsheet/</loc>
+    <lastmod>2025-02-24T21:40:27+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/nginx-config/</loc>
+    <lastmod>2025-02-24T21:39:47+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/lemp-stack/</loc>
+    <lastmod>2025-02-24T21:38:48+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/github-actions/</loc>
+    <lastmod>2025-02-24T21:37:08+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/docker/</loc>
+    <lastmod>2025-02-24T21:36:55+05:45</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Pratik Amatya'
 theme = 'papermod'
 canonifyURLs = true
+publishDir = "docs"
 
 [params]
   DateFormat = "January 2, 2006"
@@ -33,7 +34,7 @@ canonifyURLs = true
 
   [params.homeInfoParams]
     enabled = true
-    Title = "Hi, I am Pratik \\U0001F44B"
+    Title = "Hi, I am Pratik \U0001F44B"
     Content = "I am a web application developer proficient in front-end and back-end technologies such as Vue.js, React.js, Node.js, Express.js, and MySQL. I have a keen interest in backend technologies, and I am currently expanding my horizons towards DevOps."
 
   [[params.socialIcons]]

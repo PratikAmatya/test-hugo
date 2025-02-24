@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Pratik Amatya</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Pratik Amatya</description>
+    <generator>Hugo -- 0.144.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Feb 2025 21:41:18 +0545</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH Setup</title>
+      <link>http://localhost:1313/posts/ssh-setup/</link>
+      <pubDate>Mon, 24 Feb 2025 21:41:18 +0545</pubDate>
+      <guid>http://localhost:1313/posts/ssh-setup/</guid>
+      <description>&lt;h4 id=&#34;copy-the-public-and-private-key-to-the-ssh-directory&#34;&gt;Copy the public and private key to the .ssh directory&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp ~/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;filePath&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/id_rsa* ~/.ssh/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;setup-config-file&#34;&gt;Setup config file&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano ~/.ssh/config
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;config-file-configuration&#34;&gt;Config file configuration&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host acme-server
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    HostName 34.231.213.345
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    User pratik
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    IdentityFile ~/.ssh/id_rsa
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;ssh-to-the-server&#34;&gt;SSH to the server&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh acme-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Regex Cheatsheet</title>
+      <link>http://localhost:1313/posts/regex-cheatsheet/</link>
+      <pubDate>Mon, 24 Feb 2025 21:40:27 +0545</pubDate>
+      <guid>http://localhost:1313/posts/regex-cheatsheet/</guid>
+      <description>&lt;h4 id=&#34;regex-is-used-for-pattern-matching-or-string-matching&#34;&gt;&lt;em&gt;Regex&lt;/em&gt; is used for pattern matching or string matching&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[abc]      a,b or c
+[^abc]     any character except a,b,c
+[a-z]      a to z
+[A-Z]      A to Z
+[a-zA-Z]   a to z, A to Z
+[0-9]      0 to 9
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;quantifiers&#34;&gt;Quantifiers&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[]?     Occurs 0 or 1 times
+[]+     Occurs 1 or more times
+[]*     Occurs 0 or more times
+[]{n}   Occurs n times
+[]{n,}  Occurs n or more times
+[]{y,z} Occurs atleast y times but less than z times
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;regex-meta-characters&#34;&gt;Regex Meta Characters&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;\d [0-9]
+\D [^0-9]
+\w [a-zA-Z0-9]
+\W [^\w]
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;\ - tells computer to treat following character as search character. e.g. &amp;lsquo;+&amp;rsquo; &amp;lsquo;.&amp;rsquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nginx Config</title>
+      <link>http://localhost:1313/posts/nginx-config/</link>
+      <pubDate>Mon, 24 Feb 2025 21:39:47 +0545</pubDate>
+      <guid>http://localhost:1313/posts/nginx-config/</guid>
+      <description>&lt;h3 id=&#34;frontend-nginx-sample-config&#34;&gt;Frontend Nginx Sample Config&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;server&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#f92672&#34;&gt;root&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;[PATH&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;TO&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;DIST&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;FILE]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#f92672&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;index.html&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;index.htm&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;index.nginx-debian.html&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;index.php&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#f92672&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;[DOMAIN&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;NAME]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     		 &lt;span style=&#34;color:#f92672&#34;&gt;try_files&lt;/span&gt; $uri $uri/ &lt;span style=&#34;color:#e6db74&#34;&gt;/index.html&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/vault&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/usr/share/phpmyadmin&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;\.php$&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;include&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;fastcgi_params&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_param&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;SCRIPT_FILENAME&lt;/span&gt; $request_filename;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_index&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;index.php&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_split_path_info&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;^(.+\.php)(/.+)&lt;/span&gt;$;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;fastcgi_pass&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;unix:/var/run/php/php7.4-fpm.sock&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/phpmyadmin/&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;\.env&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/\.git&lt;/span&gt;$ {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;backend-nginx-sample-config&#34;&gt;Backend Nginx Sample Config&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;server&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;server_name&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;[DOMAIN&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;NAME]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Reverse Proxy for Node.js App
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_pass&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;http://localhost:3000&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_http_version&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Upgrade&lt;/span&gt; $http_upgrade;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Connection&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;upgrade&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Host&lt;/span&gt; $host;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_cache_bypass&lt;/span&gt; $http_upgrade;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Optional: Add timeouts
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_read_timeout&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;60s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_connect_timeout&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;60s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_send_timeout&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;60s&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# Forward Real Client IP
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Real-IP&lt;/span&gt; $remote_addr;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Forwarded-For&lt;/span&gt; $proxy_add_x_forwarded_for;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Forwarded-Proto&lt;/span&gt; $scheme;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    &lt;span style=&#34;color:#f92672&#34;&gt;proxy_set_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Host&lt;/span&gt; $host;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Deny access to .env files
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;\.env&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Deny access to .git directories
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/\.git&lt;/span&gt;$ {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; ~&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;^/(xmlrpc\.php|wp-admin|wp-includes|wlwmanifest\.xml|wp-login\.php)&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Deny access to phpMyAdmin
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;/phpmyadmin/&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;deny&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;all&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Optional: Add security headers
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Content-Type-Options&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;nosniff&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-Frame-Options&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;DENY&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;add_header&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;X-XSS-Protection&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;mode=block&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>LEMP Stack</title>
+      <link>http://localhost:1313/posts/lemp-stack/</link>
+      <pubDate>Mon, 24 Feb 2025 21:38:48 +0545</pubDate>
+      <guid>http://localhost:1313/posts/lemp-stack/</guid>
+      <description>&lt;p&gt;LEMP is an open-source web application stack used to develop web applications.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LEMP&lt;/strong&gt; Stands For:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;L - Linux Operating System
+E - Nginx Server
+M - MySQL Database
+P - PHP
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;set-locale-optional&#34;&gt;Set locale (Optional)&lt;/h3&gt;
+&lt;p&gt;Setting the locale can prevent potential issues during installation. Open &lt;em&gt;/etc/default/locale&lt;/em&gt; and add the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/default/locale
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANGUAGE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LC_ALL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;update-the-package-list&#34;&gt;Update the Package list&lt;/h3&gt;
+&lt;p&gt;Update your system&amp;rsquo;s package database&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;install-nginx&#34;&gt;Install Nginx&lt;/h3&gt;
+&lt;p&gt;Install the Nginx web server:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Github Actions</title>
+      <link>http://localhost:1313/posts/github-actions/</link>
+      <pubDate>Mon, 24 Feb 2025 21:37:08 +0545</pubDate>
+      <guid>http://localhost:1313/posts/github-actions/</guid>
+      <description>&lt;h3 id=&#34;setup-runner-in-the-server&#34;&gt;Setup runner in the server&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Runner section in github&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/github-runner.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Select the New self-hosted runner&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt=&#34;OS selection in runner section&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/github-runner2.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Select the Server OS (Most probably linux)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Run in your terminal (Be sure you are connected to your server)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt; : Skip the following step&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/posts/docker/</link>
+      <pubDate>Mon, 24 Feb 2025 21:36:55 +0545</pubDate>
+      <guid>http://localhost:1313/posts/docker/</guid>
+      <description>&lt;h4 id=&#34;docker&#34;&gt;Docker&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A container platform that allows you to build, test &amp;amp; deploy applications quickly&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;dockerfile&#34;&gt;Dockerfile&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A set of instructions for creating an image&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A packaged application and its dependencies&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;container&#34;&gt;Container&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A running instance of that image executing the application in an isolated environment&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;docker-volume&#34;&gt;Docker Volume&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A persistent storage mechanism that allows containers to store and share data beyond their lifecycle.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;docker-compose&#34;&gt;Docker Compose&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A tool for defining and managing multi-container applications using a YAML configuration file.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
