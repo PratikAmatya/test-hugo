@@ -1,4 +1,64 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Pratik Amatya'
 theme = 'papermod'
+canonifyURLs = true
+
+[params]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto" # dark, light
+  disableThemeToggle = false
+  defaultContentOrder = "weight"
+  defaultContentSort = "asc"
+
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = true
+  showtoc = false
+  tocopen = false
+
+  [params.author]
+    name = "Pratik Amatya"
+    homepage = "https://github.com/PratikAmatya"
+
+  [params.homeInfoParams]
+    enabled = true
+    Title = "Hi, I am Pratik \\U0001F44B"
+    Content = "I am a web application developer proficient in front-end and back-end technologies such as Vue.js, React.js, Node.js, Express.js, and MySQL. I have a keen interest in backend technologies, and I am currently expanding my horizons towards DevOps."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:pratikamatya10@gmail.com"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/PratikAmatya"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/pratikamatya/"
+  [[params.socialIcons]]
+    name = "discord"
+    url = "https://discord.com/users/857988248823791618"
+  [[params.socialIcons]]
+    name = "CV"
+    url = "https://drive.google.com/file/d/1HX8XyTbrgb3tTY6CkTh9lTEOFsZBYbMG/view?usp=sharing"
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[tags]
+  tags = [
+    "responsive", "simple", "clean", "light", "dark", "blog", "minimalist", "highlight.js", "search", "portfolio", "resume", "personal", "developer", "designer", "freelancer", "creative", "elegant", "modern", "full-stack", "front-end", "back-end", "vue", "react", "node", "express", "mysql", "mongodb", "postgresql"
+  ]
